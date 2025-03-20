@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="controls">
+           <div class="label">Controls</div>
+           
+        <div class="outer-button-container">
+            Views
+            <div class="buttons-container">
+                <button class="active" onclick="switchView('top')">Top</button>
+                <button onclick="switchView('side')">Side</button>
+                <button onclick="switchView('perspective')">Perspective</button>
+            </div>
+        </div>
+
+        <div class="outer-button-container">
+            Runners
+            <div class="buttons-container">
+            <button onclick="switchRunner('runner1')">Elizabeth Atkinson<br> 1921, 6m 13s</button>
+            <button onclick="switchRunner('runner2')">Anne Smith <br>1967, 4m 37s</button>
+            <button onclick="switchRunner('runner3')">Faith Kipyegon <br>2025, 4m</button>
+            </div>
+        </div>
+
+        <div class="outer-button-container">
+            Speed
+            <div class="buttons-container">
+                <button class="active" onclick="switchSpeed(1)">Real Time</button>
+                <button onclick="switchSpeed(4)">4x</button>
+                <button onclick="switchSpeed(8)">8x</button>
+                <button onclick="switchSpeed(16)">16x</button>
+            </div>
+        </div>
+
+        </div>
+        
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
